@@ -23,7 +23,7 @@ const Header = () => {
       offset={-100}
       smooth
       spy
-      activeStyle={{color: "var(--color-p3)"}}
+      activeStyle={{ color: "var(--color-p3)" }}
       className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
     >
       {title}
@@ -33,8 +33,10 @@ const Header = () => {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 z-50 w-full transition-all duration-500 max-lg:py-4",
-        hasScrolled ? "py-2 bg-black-100/80 backdrop-blur-[16px]" : "py-10"
+        "fixed top-0 left-0 z-50 w-full transition-all duration-500",
+        hasScrolled
+          ? "max-lg:py-1 py-2 bg-black-100/80 backdrop-blur-[16px]"
+          : "max-lg:py-4 py-10"
       )}
     >
       <div className="container flex h-14 items-center max-lg:px-5">
