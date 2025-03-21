@@ -291,8 +291,8 @@ layer(base);
   @apply even:g7 even:rounded-bl-3xl even:rounded-br-3xl even:rounded-tl-3xl even:rounded-tr-3xl even:border-s4;
 }
 
-@utility faq-line_after {
-  @apply after:absolute after:-top-1.5 after:left-[calc(50%-5px)] after:z-4 after:size-2.5 after:rounded-half after:border-2 after:border-s2 after:bg-s1 after:content-[''];
+@utility faq-line_before {
+  @apply before:absolute before:-top-1.5 before:left-[calc(50%-5px)] before:z-4 before:size-2.5 before:rounded-half before:border-2 before:border-s2 before:bg-s1 before:content-[''];
 }
 
 @utility faq-glow_before {
